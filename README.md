@@ -20,13 +20,20 @@ This template took an inspiration from [**andrefelipe/vite-php-setup**](https://
 
 ### Setting up dev environment
 
-Install NodeJS version 18+, and PNPM (optional)
+Install NodeJS version 18+, Composer, and PNPM (optional)
 
 Configure you project to run on a local server. For example, [http://php-vite-ts-template.test](http://php-vite-ts-template.test). If your using XAMPP, configure your [virtual host](https://stackoverflow.com/questions/27268205/how-to-create-virtual-host-on-xampp).
 
 It is highly recommended to configure it since the assets reference from files, for example a background image in css, `url('./bg.png')` will be complied to `url('/dist/assets/bg-sAsjks.png')`.
 
 Duplicate the `.env.example` and rename it to `.env`, this is used to configure the vite server.
+
+Install dependencies
+
+```bash
+composer install
+pnpm install
+```
 
 Start your PHP web server and run the vite server
 
