@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "prettier": "^3.5.2",
+    "tinyglobby": "^0.2.12",
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0",
+    "vite-plugin-live-reload": "^3.0.4"
+  }
+}

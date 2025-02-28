@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Deny access to the 'includes' folder
+RewriteRule ^includes/ - [R=404,L]
+
+# Allow access to files in the 'dist' folder
+RewriteRule ^dist/.*\/$ - [R=404,L]
+RewriteRule ^dist/.*\.*$ - [L]

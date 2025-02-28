@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Redirect all other requests to the 'public' folder
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.*)$ /public/$1 [L]
+
+# Prevent access to the /public/includes folder
+# RewriteCond %{REQUEST_URI} ^/public/includes/
+# RewriteRule ^(.*)$ /public/404.php [R=404,L]
+# ErrorDocument 404 /public/404.php
